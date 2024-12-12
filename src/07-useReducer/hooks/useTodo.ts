@@ -45,7 +45,7 @@ export const useTodo = () => {
     const onToggleTodo = ( todoId: number ) => {
       const action = {
         type: '[TODO] Toggle todo',
-        payload: {   id: todoId },
+        payload: { id: todoId },
       }
   
       dispatch( action );

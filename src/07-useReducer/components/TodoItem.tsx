@@ -11,6 +11,7 @@ export const TodoItem: React.FC<TodoItemProps> = ({ id, description, done, onDel
       <span
         className={`align-self-center ${ (done) ? 'text-decoration-line-through' : '' } `}
         onClick={ () => onToggleTodo( id ) }
+        // aria-label='span' identificarlo en las pruebas
       >
         { description }
       </span>
