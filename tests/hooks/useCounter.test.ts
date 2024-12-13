@@ -27,12 +27,6 @@ describe('Pruebas en el useCounter', () => {
 
     act( () => {
       increment();
-      /* increment(2); En este caso el resultado no es 103, ya que la prueba usa el retorno del contador actual, para esto tendremos que cambiar la forma en que incrementamos en el useStae.
-
-      const increment = ( factor: number = 1 ) => {
-        setCounter( (counter) => counter + factor );
-      }
-      */
     });
 
     expect( result.current.counter ).toBe(101);
